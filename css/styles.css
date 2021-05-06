@@ -1,20 +1,21 @@
-#products p {
-  /*this will target the p
-  elements of the products id*/
+/* .first-letter {
+  font-size: 300%;
   font-weight: bold;
-  font-size: larger;
-}
+} */
 
-/* this is a pseudo class reference */
-article p:first-of-type {
-  font-size: 140%;
-  font-style: italic;
-}
+/* no need to do it the above way */
 
-article p:last-of-type {
+/* single colon for pseudo-classes
+double colon for pseudo-elements */
+p::first-letter {
+  font-size: 300%;
   font-weight: bold;
 }
 
-/* using :first-child or last-child
-  can be fragile whene elements are moved around
-*/
+::selection {
+  background-color: pink;
+}
+
+h1::selection {
+  background-color: red;
+}
