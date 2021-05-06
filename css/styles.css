@@ -1,28 +1,17 @@
-#products p {
-  /*this will target the p
-  elements of the products id*/
-  font-weight: bold;
-  font-size: larger;
+body {
+  margin: 10px;
 }
 
-#products > p {
-  /*this will target the p
-  elements of the products id*/
-  font-weight: bold;
-  font-size: larger;
+/* this is a pseudo class reference */
+article p:first-of-type {
+  font-size: 140%;
+  font-style: italic;
 }
 
-#products + p {
-  /*this will target the p
-  elements of the products id*/
+article p:last-of-type {
   font-weight: bold;
-  font-size: smaller;
-  color:brown
 }
 
-#products ~ p {
-  /*this will target the p
-  elements of the products id*/
-  font-weight: bold;
-  font-size: medium;
-}
+/* using :first-child or last-child
+  can be fragile whene elements are moved around
+*/
