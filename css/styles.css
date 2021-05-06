@@ -1,7 +1,28 @@
-body {
-  margin: 10px;
+#products p {
+  /*this will target the p
+  elements of the products id*/
+  font-weight: bold;
+  font-size: larger;
 }
 
-p {
-    color: orange;
-  }
+#products > p {
+  /*this will target the p
+  elements of the products id*/
+  font-weight: bold;
+  font-size: larger;
+}
+
+#products + p {
+  /*this will target the p
+  elements of the products id*/
+  font-weight: bold;
+  font-size: smaller;
+  color:brown
+}
+
+#products ~ p {
+  /*this will target the p
+  elements of the products id*/
+  font-weight: bold;
+  font-size: medium;
+}
