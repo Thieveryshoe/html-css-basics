@@ -1,5 +1,8 @@
-body {
-  margin: 10px;
+#products p {
+  /*this will target the p
+  elements of the products id*/
+  font-weight: bold;
+  font-size: larger;
 }
 
 /* this is a pseudo class reference */
