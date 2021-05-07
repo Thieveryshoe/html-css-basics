@@ -1,21 +1,34 @@
-/* .first-letter {
-  font-size: 300%;
-  font-weight: bold;
-} */
-
-/* no need to do it the above way */
-
-/* single colon for pseudo-classes
-double colon for pseudo-elements */
-p::first-letter {
-  font-size: 300%;
-  font-weight: bold;
+/* using rgb */
+.rgb {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(230, 205, 16);
 }
-
-::selection {
-  background-color: pink;
+/* using rgba 
+profides transparency between 0 and 1*/
+.rgba {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(230, 205, 16, .5);
 }
-
-h1::selection {
-  background-color: red;
+/* using hex 
+no transparency options*/
+.hex {
+  width: 200px;
+  height: 200px;
+  background-color: #e6cd10;
+}
+/* using hsl */
+.hsl {
+  width: 200px;
+  height: 200px;
+  background-color: hsl(53, 90%, 20%);
+  color: whitesmoke;
+}
+/* using hsla */
+.hsla {
+  width: 200px;
+  height: 200px;
+  background-color: hsla(53, 90%, 20%, .75);
+  color: whitesmoke;
 }
