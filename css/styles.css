@@ -1,31 +1,13 @@
 /* deault top to bottom */
-.linearDefault {
-  width: 200px;
+.box {
+  width: 1000px;
   height: 200px;
-  background: linear-gradient(dodgerblue, yellow);
-  color: whitesmoke
+  color: whitesmoke;
+  background: dodgerblue;
+  border: 10px solid salmon;
 }
 
-.linearToRight {
-  width: 200px;
-  height: 200px;
-  background: linear-gradient(to right, dodgerblue, yellow);
-  color: whitesmoke
-}
-
-.linearBottomRight {
-  width: 200px;
-  height: 200px;
-  background: linear-gradient(to bottom right, dodgerblue, yellow);
-  color: whitesmoke
-}
-
-.linearPercentage {
-  width: 200px;
-  height: 200px;
-  background: linear-gradient(dodgerblue 60%, yellow);
-  color: whitesmoke
-}
-/* there are online tools such as
-  https://cssgradient.io/ */
-/* there are other types of gradients */
+/* there are other long form properties 
+but most of the time border is used.
+can make shapes with the border-radius
+property.  google css shapes for info */
