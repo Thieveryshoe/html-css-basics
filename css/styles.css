@@ -1,34 +1,31 @@
-/* using rgb */
-.rgb {
+/* deault top to bottom */
+.linearDefault {
   width: 200px;
   height: 200px;
-  background-color: rgb(230, 205, 16);
+  background: linear-gradient(dodgerblue, yellow);
+  color: whitesmoke
 }
-/* using rgba 
-profides transparency between 0 and 1*/
-.rgba {
+
+.linearToRight {
   width: 200px;
   height: 200px;
-  background-color: rgba(230, 205, 16, .5);
+  background: linear-gradient(to right, dodgerblue, yellow);
+  color: whitesmoke
 }
-/* using hex 
-no transparency options*/
-.hex {
+
+.linearBottomRight {
   width: 200px;
   height: 200px;
-  background-color: #e6cd10;
+  background: linear-gradient(to bottom right, dodgerblue, yellow);
+  color: whitesmoke
 }
-/* using hsl */
-.hsl {
+
+.linearPercentage {
   width: 200px;
   height: 200px;
-  background-color: hsl(53, 90%, 20%);
-  color: whitesmoke;
+  background: linear-gradient(dodgerblue 60%, yellow);
+  color: whitesmoke
 }
-/* using hsla */
-.hsla {
-  width: 200px;
-  height: 200px;
-  background-color: hsla(53, 90%, 20%, .75);
-  color: whitesmoke;
-}
+/* there are online tools such as
+  https://cssgradient.io/ */
+/* there are other types of gradients */
