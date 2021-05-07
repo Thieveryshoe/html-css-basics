@@ -1,13 +1,15 @@
 /* deault top to bottom */
 .box {
-  width: 1000px;
+  width: 200px;
   height: 200px;
-  color: whitesmoke;
-  background: dodgerblue;
-  border: 10px solid salmon;
+  background: coral;
+  box-shadow: 0 0 30px gray;
 }
 
-/* there are other long form properties 
-but most of the time border is used.
-can make shapes with the border-radius
-property.  google css shapes for info */
+h1 {
+  color: white;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* semi transparent black shadow or any 
+semi transparent shadow color will be best for text shadows */
