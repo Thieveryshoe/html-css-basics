@@ -1,11 +1,33 @@
-.box {
-  border: 3px solid gold;
-  height: 150px;
-  width: 150px;
-  overflow: auto;
+body {
+  
 }
 
-/* use the overflow property to dictate if 
-scroll bars appear or not when the content
-of an element is larger than the element
-itself */
+.box {
+  width: 50%; /* 50% of the parent element */
+  /* 100 percent of the viewport height
+  vw is viewport width */
+  height: 100vh;
+  background-color: gold;
+  border-top: 3px solid orange;
+}
+
+/* relative unites allow us to resize elements
+when the window/screen is resized.  
+This allows for scalable UIs */
+
+/* em is kind of a meh unit, use rem over em.
+rem is 10x the font size of the root element.
+the root element is the html element and most
+browsers use 16 as the default font size */
+
+.font {
+  width: 15rem; /* 15 x 16 = nasty math so...*/
+}
+
+html {
+  font-size: 62.5% /* 16 x .625 = 10*/;
+}
+
+.font2 {
+  width: 15rem; /* 15 x 10 = 150px */
+}
