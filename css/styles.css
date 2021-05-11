@@ -1,8 +1,44 @@
-p {
-  margin: 20px;
-  padding : 0;
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  padding: 20px;
+  border: 10px solid orange;
 }
 
-/* use margin property to separate elements
+/* height and width properties are, by defualt,
+applied to the content box.  adding a border or padding
+will make the box bigger. */
 
-use margin property to separate content from a border */
+/* the margin property does not impact the
+size of the box, it simply moves it around */
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  padding: 20px;
+  border: 10px solid orange;
+
+  /* box-sizing: border-box; */
+  margin: 20px 20px;
+}
+
+/* using box-sizing property we can set the max size
+of the element, by using the border-box
+
+/* universal selector.  Use with care
+setting border-box is a common use case.
+
+Does not apply to pseudo-elements unless
+before and after pseudo-elements are added*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.box2::before {
+  content: "Hello";
+}
