@@ -1,35 +1,37 @@
-.boxes {
-  border: 3px solid lightgray;
-  position: relative;
-}
+/* at the end of the day, using floating elements
+for layouts is a no no in modern css.
+don't do it.  only taught because it will be
+encountered in the wild
 
-.box {
+use flexbox or grid instead*/
+
+.avatar {
   width: 5rem;
   height: 5rem;
-}
-
-.box-one {
+  border-radius: 25%;
   background-color: gold;
+  float: left;
+  margin-top: .5rem;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+  margin-left: .25rem;
 }
 
-body {
-  height: 200vh;
+.tweet {
+  border: 3px solid lightgray;
 }
 
-/* used fixed positioning to create "navigation" bars
-this setup will keep the wide box on top of the page while
-scrolling down */
-
-.box-two {
-  background-color: tomato;
-  position: fixed;
-  top: 0;
-  left: 2rem;
-  right: 2rem;
-  width: auto;
-  z-index: 1;
+/* adding an empty "div" dynamically without polluting the
+markup of the html to add an empty div  */
+.clearFix::after {
+  content: '';
+  display: block; 
+  clear: both;
 }
 
-.box-three {
-  background-color: dodgerblue;
+.clear {
+  clear: both;
 }
+
+/* parent elements do not see floated elements
+by default. */
