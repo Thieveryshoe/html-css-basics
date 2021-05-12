@@ -1,5 +1,9 @@
 .boxes {
   border: 3px solid lightgray;
+  /* absolute positioning works relative to the container
+  the container must be set to a relative position in order
+  for absolute positioning to work for the children elements */
+  position: relative;
 }
 
 .box {
@@ -13,13 +17,17 @@
 
 .box-two {
   background-color: tomato;
-  /* relative to it's normal positions */
-  position: relative; /*by default, static*/
-  left: 4rem;
-  bottom: 4rem;
-  z-index: -1; /* default is 0 */
+  /*  */
+  position: absolute; /* container must be positioned relatively */
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
 .box-three {
   background-color: dodgerblue;
 }
+
+/* when we absolutely position an element, we can imagine it's on a separate layer
+the element is removed from the normal flow of the page and all of the other elements
+are rendered as if the absolutely positioned element doesn't exist*/
