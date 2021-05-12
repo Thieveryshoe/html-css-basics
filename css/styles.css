@@ -1,8 +1,5 @@
 .boxes {
   border: 3px solid lightgray;
-  /* absolute positioning works relative to the container
-  the container must be set to a relative position in order
-  for absolute positioning to work for the children elements */
   position: relative;
 }
 
@@ -15,19 +12,24 @@
   background-color: gold;
 }
 
+body {
+  height: 200vh;
+}
+
+/* used fixed positioning to create "navigation" bars
+this setup will keep the wide box on top of the page while
+scrolling down */
+
 .box-two {
   background-color: tomato;
-  /*  */
-  position: absolute; /* container must be positioned relatively */
-  right: 0;
-  bottom: 0;
+  position: fixed;
+  top: 0;
+  left: 2rem;
+  right: 2rem;
+  width: auto;
   z-index: 1;
 }
 
 .box-three {
   background-color: dodgerblue;
 }
-
-/* when we absolutely position an element, we can imagine it's on a separate layer
-the element is removed from the normal flow of the page and all of the other elements
-are rendered as if the absolutely positioned element doesn't exist*/
