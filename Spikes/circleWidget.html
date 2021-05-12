@@ -8,6 +8,100 @@
     <title>Circle Widget</title>
 </head>
 <body>
+    <table class="roe-summary">
+        <thead>
+            <tr>
+                <th></th>
+                <th>EXISTING</th>
+                <th>PROPOSED</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Total Income:</td>
+                <td>
+                    $321,710
+                </td>
+                <td>
+                    $321,710
+                </td>
+                </tr>
+                <tr>
+                <td>Total Expenses:</td>
+                <td>
+                    $15,409
+                </td>
+                <td>
+                    $15,409
+                </td>
+                </tr>
+                <tr>
+                    <td>Pre-Tax Net Income:</td>
+                    <td>
+                    $306,301
+                    </td>
+                    <td>
+                    $306,301
+                    </td>
+                </tr>
+                <tr>
+                    <td>Less Taxes:</td>
+                    <td>
+                        $107,205
+                    </td>
+                    <td>
+                        $107,205
+                    </td>
+                </tr>
+                <tr>
+                    <td>Post-Tax Net Income:</td>
+                    <td>
+                        $199,096
+                    </td>
+                    <td>
+                        $199,096
+                    </td>
+                </tr>
+                <tr>
+                    <td>Capital Required:</td>
+                    <td>
+                        $1,184,196
+                    </td>
+                    <td>
+                        $1,184,196
+                    </td>
+                </tr>
+                <tr>
+                    <td>Return On Equity:</td>
+                    <td>
+                    16.81 %
+                    </td>
+                    <td>
+                    16.81 %
+                    </td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Target ROE:</td>
+                <td>
     
+                </td>
+                <td>
+                    18.00%
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    <p></p>
+    <div id="svgContainer">
+        <!-- <p id="roeParagraph">PROPOSED ROE</p> -->
+        <svg id="svg">
+            <circle id="progressBg" cx="75" cy="75" r="60" stroke-width="14" fill="transparent" stroke-dasharray="376.9911184307752" />
+            <circle id="progress" cx="75" cy="75" r="60" stroke-width="15" fill="transparent" stroke-dasharray="376.9911184307752" />
+        </svg>
+        <div id="sliderValue"></div>
+    </div>
+    <script src="progressWidget.js"></script>
 </body>
 </html>
