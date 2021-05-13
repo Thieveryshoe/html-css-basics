@@ -41,14 +41,6 @@ body {
 			font-weight: 600;
 		}
 
-		.myRow {
-			display: flex;
-		}
-
-		.myColumn {
-			flex: 50%;
-		}
-
 		.roe-summary {
 			border: 1px solid #e0e3e5;
 			border-collapse: collapse;
