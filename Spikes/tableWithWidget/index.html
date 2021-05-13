@@ -8,10 +8,8 @@
     <title>table and widget</title>
 </head>
 <body>
-    <!-- existing / proposed table -->
     <div class="flexBoxRow">
         <div>
-            <!-- existing / proposed table -->
             <table class="roe-summary">
                 <thead>
                     <tr>
@@ -99,29 +97,25 @@
             </table>
         </div>
         <div>
-            <!-- progress widget -->
-            <p id="roeParagraph">PROPOSED ROE</p>
-            <div id="svgContainer">
-                <!-- <svg id="svg" height="150" width="150"> -->
-                <svg id="svg">
-                    <circle id="progressBg" cx="75" cy="75" r="60" stroke-width="14" fill="transparent" stroke-dasharray="376.9911184307752"
+            <p class="roeParagraph">EXISTING ROE</p>
+            <div class="svgContainer">
+                <svg class="svg">
+                    <circle class="progressBg" cx="75" cy="75" r="60" stroke-width="14" fill="transparent" stroke-dasharray="376.9911184307752"
                     />
-                    <circle id="progress" cx="75" cy="75" r="60" stroke-width="15" fill="transparent" stroke-dasharray="376.9911184307752" />
+                    <circle id="existingProgress" cx="75" cy="75" r="60" stroke-width="15" fill="transparent" stroke-dasharray="376.9911184307752" />
                 </svg>
-                <div id="sliderValue"></div>
+                <div id="existingSliderValue"></div>
             </div>
         </div>
         <div>
-            <!-- progress widget -->
-            <p id="roeParagraph">PROPOSED ROE</p>
-            <div id="svgContainer">
-                <!-- <svg id="svg" height="150" width="150"> -->
-                <svg id="svg">
-                    <circle id="progressBg" cx="75" cy="75" r="60" stroke-width="14" fill="transparent" stroke-dasharray="376.9911184307752"
+            <p class="roeParagraph">PROPOSED ROE</p>
+            <div class="svgContainer">
+                <svg class="svg">
+                    <circle class="progressBg" cx="75" cy="75" r="60" stroke-width="14" fill="transparent" stroke-dasharray="376.9911184307752"
                     />
-                    <circle id="progress" cx="75" cy="75" r="60" stroke-width="15" fill="transparent" stroke-dasharray="376.9911184307752" />
+                    <circle id="proposedProgress" cx="75" cy="75" r="60" stroke-width="15" fill="transparent" stroke-dasharray="376.9911184307752" />
                 </svg>
-                <div id="sliderValue"></div>
+                <div id="proposedSliderValue"></div>
             </div>
         </div>
     </div>
