@@ -1,2 +1,10 @@
-/* Just look at the Grid video from Mosh in the 2nd HTML/CSS mastery course.
-there's a lot covered and it's laid out very well there. */
+/* the content is not rendered and the block for the element is not rendered */
+.first {
+    display: none; 
+}
+/* the content is not rendered but the block for the element is rendered */
+.second {
+    visibility: hidden;
+}
+
+/* No right or wrong here, just depends on what kind of problem you're trying to solve */
