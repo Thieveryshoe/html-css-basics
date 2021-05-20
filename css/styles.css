@@ -1,10 +1,42 @@
-/* the content is not rendered and the block for the element is not rendered */
-.first {
-    display: none; 
-}
-/* the content is not rendered but the block for the element is rendered */
-.second {
-    visibility: hidden;
+.container {
+    display: flex;
+    flex-direction: column;
 }
 
-/* No right or wrong here, just depends on what kind of problem you're trying to solve */
+.box {
+    background-color: gold;
+    padding: 1rem;
+}
+
+.box:nth-of-type(2) {
+    background-color: dodgerblue;
+}
+
+/* Use media queries to get some of that "reactiveness" */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries */
+@media screen and (min-width: 600px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        flex-direction: row;
+    }
+    
+    .box {
+        background-color: white;
+    }
+}
+
+/* add rule to for when page is printed */
+@media print {
+    body {
+        font-size: 12pt;
+    }
+
+    .box {
+        padding: 4cm; /* bogus value to see the point */
+    }
+}
