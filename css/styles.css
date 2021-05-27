@@ -1,42 +1,22 @@
-.container {
-    display: flex;
-    flex-direction: column;
+body {
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.box {
-    background-color: gold;
-    padding: 1rem;
+/* applies to all text in the body of the document */
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.box:nth-of-type(2) {
-    background-color: dodgerblue;
+/* font stack, will try to use the first, then second, and so on.  not all fonts are installed on all
+computers, so it's a way to try to ensure styling
+fonts with spaces in their name are wrapped in single quotes */
+
+p {
+    font-weight: normal;
+    font-size: 2rem;
+    color: #333;
 }
 
-/* Use media queries to get some of that "reactiveness" */
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries */
-@media screen and (min-width: 600px) {
-    .container {
-        flex-direction: row;
-    }
-}
-
-@media screen and (min-width: 900px) {
-    .container {
-        flex-direction: row;
-    }
-    
-    .box {
-        background-color: white;
-    }
-}
-
-/* add rule to for when page is printed */
-@media print {
-    body {
-        font-size: 12pt;
-    }
-
-    .box {
-        padding: 4cm; /* bogus value to see the point */
-    }
-}
+/* using a darker gray for body text can be preferred over absolute black when it comes to p text.
+headings can be absolute black (#000) */
