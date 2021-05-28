@@ -1,22 +1,32 @@
-body {
-    font-family: 'Courier New', Courier, monospace;
+@font-face {
+    font-family: 'opensans';
+    src: url('fonts/open-sans/opensans-regular-webfont.woff2') format('woff2'),
+         url('fonts/open-sans/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-/* applies to all text in the body of the document */
+@font-face {
+    font-family: 'opensans';
+    src: url('fonts/open-sans/opensans-bold-webfont.woff2') format('woff2'),
+         url('fonts/open-sans/opensans-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* use the font-face rule to register fonts.  include fonts (woff/woff2 file format) in your project.
+reference the fonts in the src property and now your site can use these fonts */
+
+body {
+    font-family: 'opensans', Arial, Helvetica, sans-serif;
+}
 
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-/* font stack, will try to use the first, then second, and so on.  not all fonts are installed on all
-computers, so it's a way to try to ensure styling
-fonts with spaces in their name are wrapped in single quotes */
 
 p {
     font-weight: normal;
     font-size: 2rem;
     color: #333;
 }
-
-/* using a darker gray for body text can be preferred over absolute black when it comes to p text.
-headings can be absolute black (#000) */
