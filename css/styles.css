@@ -4,7 +4,11 @@
          url('fonts/open-sans/opensans-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: optional;
 }
+
+/* use the font display property to help reduce the chance of a Flash of Unstyled Text.
+check Mosh's video for more info on this, its short and thorough */
 
 @font-face {
     font-family: 'opensans';
