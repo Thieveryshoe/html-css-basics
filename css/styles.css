@@ -1,22 +1,23 @@
-/* relying on pixels for font sizes isn't really a good idea.
-Use a releative unit, rem, instead. */
-
-/* 1 rem = 1 x font size of the root element (html) 
-if there isn't a rule for the html element, then the default
-font size is established by the browser/user. It's usually 16px by default*/
-
-/* https://type-scale.com/ is a good site to confirm font sizing */
-
 body {
-    font-family: 'opensans', Arial, Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    /* general rule of thumb is to set the line height to 1.5 times the font height */
+    /* if you supply the line-height prop without a unit, it will apply it as a multiplier of
+    the font size prop */
+    line-height: 1.5;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-p {
-    font-weight: normal;
-    font-size: 2rem;
-    color: #333;
+h1 {
+    margin: 3rem 0 1rem;
+    /* use rem because the user can change the default font size.  these margin adjustments are still
+    respected if the user changes the font sizes. */
 }
