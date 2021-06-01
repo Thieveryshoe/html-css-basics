@@ -1,1 +1,22 @@
-/* Mosh's videos on Font Services and System Font Stacks are  helpful and short*/
+/* relying on pixels for font sizes isn't really a good idea.
+Use a releative unit, rem, instead. */
+
+/* 1 rem = 1 x font size of the root element (html) 
+if there isn't a rule for the html element, then the default
+font size is established by the browser/user. It's usually 16px by default*/
+
+/* https://type-scale.com/ is a good site to confirm font sizing */
+
+body {
+    font-family: 'opensans', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    font-weight: normal;
+    font-size: 2rem;
+    color: #333;
+}
