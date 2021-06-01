@@ -1,10 +1,9 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1rem;
-    /* general rule of thumb is to set the line height to 1.5 times the font height */
-    /* if you supply the line-height prop without a unit, it will apply it as a multiplier of
-    the font size prop */
     line-height: 1.5;
+    /* letter-spacing: 1px;
+    word-spacing: 2px; */
 }
 
 h1,
@@ -18,6 +17,11 @@ h6 {
 
 h1 {
     margin: 3rem 0 1rem;
-    /* use rem because the user can change the default font size.  these margin adjustments are still
-    respected if the user changes the font sizes. */
+}
+
+p {
+    /* rule of thumb for line length is 50 - 70 characters */   
+    /* ch unit is based on the 0 (zero) character.  50 0s is 
+    going to net you about 60-70 regular characters */
+    width: 50ch;
 }
